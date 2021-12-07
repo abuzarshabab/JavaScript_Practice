@@ -13,26 +13,47 @@ const restaurant = {
     starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
     mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
-    openingHours: {
-        [weekDays[3]]: {
-            open: 12,
-            close: 22,
-        },
-        [weekDays[4]]: {
-            open: 11,
-            close: 23,
-        },
-        [weekDays[5]]: {
-            open: 0, // Open 24 hours
-            close: 24,
-        },
-    },
+
 };
 
-for (const day of weekDays) {
-    const status = restaurant.openingHours[day]?.open ?? "closed"
-    console.log(status != "closed" ? `on ${day} we, Open at ${status}` : `on ${day} we, closed`);
+const openingHours = {
+    [weekDays[3]]: {
+        open: 12,
+        close: 22,
+    },
+    [weekDays[4]]: {
+        open: 11,
+        close: 23,
+    },
+    [weekDays[5]]: {
+        open: 0, // Open 24 hours
+        close: 24,
+    },
 }
+// For of Loop Nullish
+for (const day of weekDays) {
+    const status = openingHours[day]?.open
+    // console.log(status || status == 0 ? `on ${day} we, Open at ${status}` : `on ${day} we, closed`);
+    // console.log(status);
+}
+// Object iteration 
+const properties = Object.keys(openingHours);
+const values = Object.values(openingHours);
+const Entries = Object.entries(openingHours)
+// console.log(values)
+let openStr = `We are open on ${properties.length} : `;
+
+// for (const day of properties) {
+//     openStr += `${day}, `
+// }
+// console.log(openStr);
+
+for (const [key, { open, close }] of Entries) {
+    console.log(open, close);
+
+}
+
+
 // Mutating Variable
 let a = 111;
 let b = 999;
@@ -92,3 +113,5 @@ rest2.numGuests ||= 10;
 // console.log(rest1);
 // console.log(rest2);
 // console.log(restaurant);
+
+console.log()
