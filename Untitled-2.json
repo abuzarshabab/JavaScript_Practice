@@ -1,0 +1,32 @@
+{
+    "@VER": "1.2",
+    "USER": {
+        "@CH_TYPE": "4 ",
+        "@UNIXTIMESTAMP": ""
+    },
+    "DLR": {
+        "@URL": ""
+    },
+    "SMS": [
+        {
+            "@UDH": "0",
+            "@CODING": "1",
+            "@TEXT": "This is testing purpose message ",
+            "@TEMPLATEINFO": "5820031",
+            "@CONTENTTYPE": "video/mp4",
+            "@TYPE": "video",
+            "@MSGTYPE": "3",
+            "@MEDIADATA": "https://file-examples.com/wpcontent/uploads/2017/04/file_example_MP4_480_1_5MG.mp4",
+            "@PROPERTY": "0",
+            "@ID": "1001",
+            "ADDRESS": [
+                {
+                    "@FROM": "919310662528",
+                    "@TO": "919973922757",
+                    "@SEQ": "12",
+                    "@TAG": "Sent by value first"
+                }
+            ]
+        }
+    ]
+}

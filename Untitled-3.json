@@ -1,0 +1,10 @@
+{
+  "type": "location",
+  "recipient_type": "individual",
+  "location": {
+    "longitude": "28.430944",
+    "latitude": "77.013683",
+    "name": "ValueFirst Digital Media Pvt Ltd",
+    "address": "B-18,Infocity-1,sector-34 (gurgaon)"
+  }
+}

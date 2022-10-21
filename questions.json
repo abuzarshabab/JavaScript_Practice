@@ -1,0 +1,47 @@
+{
+  "5": "how many types of api functions are there in node.js",
+  "6": "what do you mean by fork in node js",
+  "7": "difference between callback and promise",
+  "8": "what are the core modules of node.js",
+  "": "io operations in node js"
+  "": "what is promise chaining in javascript"
+  "": "prototypal inheritance in javascript"
+  "": "recursion in javascript"
+  "": "difference between package.json and package-lock.json"
+  "": "What is Package lock json file for?"
+  "": "if i delete package.json and package.lock.json can be ussed"
+  "": ""
+  "": ""
+  "": ""
+  "": ""
+  "": ""
+  "": ""
+  "": ""
+}
+
+{
+  "": "The goal of package-lock. json file is to keep track of the exact version of every package that is installed so that a product is 100% reproducible in the same way even if packages are updated by their maintainers. This solves a very specific problem that package.
+  ",
+  "": ""
+  "": ""
+  "": ""
+  "": ""
+  "": ""
+  "": ""
+}
+
+var secondMax = function (){ 
+    var arr = [20, 120, 111, 215, 54, 78]; // use int arrays
+    var max = Math.max.apply(null, arr); // get the max of the array
+    arr.splice(arr.indexOf(max), 1); // remove max from the array
+    return Math.max.apply(null, arr); // get the 2nd max
+};
+
+// here's your array :
+var stringArray = new Array('20','120','111','215','54','78');
+
+// let's convert it to a real array of numbers, not of strings :
+var intArray = stringArray.map(Number);
+
+// now let's sort it and take the second element :
+var second = intArray.sort(function(a,b){return b-a})[1]; 

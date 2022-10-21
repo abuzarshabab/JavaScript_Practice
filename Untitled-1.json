@@ -1,0 +1,26 @@
+{
+  "@VER": "1.2",
+  "USER": {
+    "@CH_TYPE": "4",
+    "@UNIXTIMESTAMP": ""
+  },
+  "SMS": [
+    {
+      "@UDH": "0",
+      "@CODING": "1",
+      "@TEXT": "mycompany",
+      "@TEMPLATEINFO": "5820743",
+      "@PROPERTY": "0",
+      "@MSGTYPE": "1",
+      "@ID": "2rttu",
+      "ADDRESS": [
+        {
+          "@FROM": "919310662528",
+          "@TO": "919737972524",
+          "@SEQ": "1",
+          "@TAG": "hola"
+        }
+      ]
+    }
+  ]
+}
